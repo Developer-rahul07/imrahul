@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <style>
+    body{
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #100f10;
+    /* background-color: #1b1b1b; */
+    /* background-color: #242424; */
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar-light .navbar-brand {
+    color: #8739F9;
+}
+.navbar-light .navbar-brand:hover {
+    color: #8739F9;
+}
+
+.navbar{
+    background-color: #100f10;
+    z-index: 5;
+     
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff7657;
+    
+ }
+ 
+
+/* Chao tho yha media Queries laga kenaa 994 se start */
+/* for lappy >>>> 992px tak work karega fir toggle bar aa jayegaaa*/
+.Small_nav{
+    background-color: #242424;
+    position: relative;
+    top: 24px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 994px) and (min-width: 577px)  {
+    .Small_nav{
+        
+        top: 17px;
+    }
+}
+
+@media only screen and (min-width: 291px)  {
+    .Small_nav{
+        top: 17px;
+        width: 84%;    }
+}
+
+/* Navbaar css end */
+
+
+/* Home css Start */
+.btn-lg{
+        position: relative;
+        top: 165px;
+        background-color: #ff7657;
+        border: 2px solid coral;
+        z-index: 999;
+        cursor: pointer;
+     
+}
+.btn-lg:hover{
+       
+    background-color: rgb(201, 66, 17);
+    border:4px solid rgb(201, 66, 17);
+    padding-bottom: 1%;
+    transition: all 0.6s;
+     
+}
+
+
+@media only screen and (max-width: 990px)  {
+  .btn-lg{
+        
+        top: 70px;
+        right: -230px;     
+}
+}
+
+@media only screen and (max-width: 770px)  {
+  .btn-lg{
+        
+    top: 55px;
+    right: -162px;    
+}
+.banner_text {
+    top: 34px;
+ }
+}
+@media only screen and (max-width: 505px)  {
+    .btn-lg {
+        top: 52px;
+        right: -135px;
+    }
+
+    .banner_text {
+        top: 40px;
+        font-size: 2rem;
+     }
+
+}
+@media only screen and (max-width: 415px)  {
+    .btn-lg {
+        top: 48px;
+        right: -96px;
+    }
+
+    .banner_text {
+        top: -30px;
+        font-size: 2rem;
+     }
+
+}
+@media only screen and (max-width: 360px)  {
+  .btn-lg{
+        
+    top: 45px;
+    right: -78px;
+}
+.banner_text {
+    top: -4px;
+    font-size: 1rem;
+ }
+}
+ 
+
+.Home_Banner {
+    /* opacity: 0.5; */
+    /* filter: brightness(20%); */
+    border-radius: 20px;     
+}
+
+.home_heading {
+    color: rgb(155, 139, 109);
+    position: relative;
+    top: -282px;
+    right: -283px;
+    display: inline-block;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+}
+
+.banner_text{
+    position: relative;
+    top: 150px;
+    font-size: 2.5rem;
+    line-height: 1.9;
+    letter-spacing: 10px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 990px)  {
+    
+    .banner_text{
+        
+        top: 45px;
+        text-align: center;
+        
+    }
+}
+
+
+.banner_img{
+    z-index: 13;
+}
+
+ 
+ /* ---- particles.js container ---- */
+ 
+
+ #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 14px;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+
+
+/* About css Start */
+
+/* Typewritter effect start */ 
+ 
+.wrapper .item {
+    visibility: hidden;
+    display: none;
+}
+ 
+.wrapper > div {
+    min-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    color: orange;
+}
+.wrapper > div:after {
+    content: "";
+    width: 10px;
+    height: 4px;
+    display: block;
+    background: black;
+    color: orange;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    animation-duration: 350ms;
+    animation-name: fade;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+	}
+    to {
+        opacity: 0;
+	}
+}
+
+/* Typewritter effect end */
+
+.about_img {
+    border: 3px solid burlywood;
+    border-radius: 50%;
+    padding: 15px 35px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: -178px;
+}
+
+@media only screen and (max-width: 1205px) and (min-width: 994px)  {
+    
+    .about_img {
+         
+        right: -100px;
+    }
+
+
+}
+@media only screen and (max-width: 994px) and (min-width: 765px)  {
+    
+    .about_img {
+         
+        right: -22px;
+    }
+
+
+}
+@media only screen and (max-width: 765px)  {
+    
+    .about_img {
+         
+        right: -102px;
+        top: -62px;
+    }
+
+
+}
+
+@media only screen and (max-width: 415px){
+    .about_img {
+        right: -47px;
+     }
+    }
+
+@media only screen and (max-width: 366px){
+     .about_img {
+        right: -28px;
+        top: -54px;
+    }
+    }
+    
+     
+
+
+
+
+
+
+.heading{
+    font-size: 37px;
+    font-family: pb;
+    color: white;
+    letter-spacing: 10px;
+    position: relative;
+    /* display: inline-block; */
+
+}
+
+.about_text{
+    color: whitesmoke;
+}
+
+ 
+
+/* About css end */
+
+
+/* Skill css Start */
+/* 
+.Skill_img {
+    border: 3px solid burlywood;
+    border-radius: 50%;
+    padding: 20px 30px; 
+    width: 200px;
+    height: 200px;
+
+} */
+
+ 
+
+
+/* Skill css End */
+
+
+/*  Project Section Start */
+#project_text {
+    text-align: center;
+    
+}
+
+.projects_box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 10px;
+    /* margin: auto; */
+    /* width: 20px; */
+    /* height: 60px; */
+    /* padding: 53px; */
+}
+
+.box{
+    color: rgb(80, 80, 80);
+    /* width: 150px; */
+    height: 200px;
+    background: rgb(24, 24,24);
+    font-size: 2rem;
+    font-family: cursive;
+    position: relative;
+
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    /* width: 300px; */
+    height: 208px;
+    background:linear-gradient(45deg , #3dec28 , #00000000 , #00000000 , #1c58c9);
+    z-index: -1;
+    transition: all 0.6s;
+}
+
+.box:hover::before{
+    transform: rotate(180deg);
+}
+
+
+/*  Project Section End */
+
+
+/*  Contact Section Start */
+
+.form-control {
+padding: 0%;
+color:#242424 ;
+color: red;
+
+}
+
+.input-group-text {
+     
+    color: #ff7657;
+    background-color: black;
+    border: 1px solid black;
+  
+}
+
+.box-bg{
+    background-color: black;
+   border:2px solid black;
+    border-radius: 5px;
+}
+
+element.style {
+    position: relative;
+    top: 73px;
+}
+
+.con-btn{
+    border: 2px solid #ff7657;
+    background-color: #ff7657;
+}
+
+.display-1{
+    color: gray;
+}
+
+/*  Contact Section End */
+ 
+    
+    </style>
+
+
+
+    <title>Developer_Rahul!</title>
+  </head>
+  <body>
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container Small_nav">
+        <a class="navbar-brand" href="#">Developer_Rahul</a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto py-3 px-5">
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br>
+  <!-- Navbar Section End -->
+
+  
+  <!-- Home Section Start -->
+  <div id="particles-js"></div>  
+ <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+  <div class="container Home">
+    
+ 
+
+  <div class="container zindex">
+
+    <div class="row">
+        <div class="col-lg-7 banner-txt">
+            <h3 class="banner_text" style="color: #ff7657;">LET'S BUILD <span style="color: #ff7657;">SOMETHING</span>   <br> GREAT TOGETHER</h3>
+            <button type="button" class="btn btn-primary btn-lg  ">Download CV </button>
+          </div>
+
+        <div class="col-lg-5">
+            <div class="banner-img">
+                <img src="img/img_bg_r1.png" alt="banner-img" class="img-fluid banner_img">
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+  
+</div><br>
+
+<!-- Home Section End -->
+
+
+<!-- About Section Start -->
+
+<div class="container">
+  <h1 id="about" class="heading text-center"  style="color: burlywood;">AB<span style="color: #ff7657;">O</span>UT</h1>
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <img src="img/about_img.png" class="img-fluid about_img" alt="my_about_img">
+       </div>
+       
+      <div style="line-height: 2;" class="col-lg-6 col-md-6 col-sm-12  about_text">
+
+        <h4><div class="wrapper">  
+          <div data-text></div>
+          <span class="item">UI & UX designer</span>
+          <span class="item">Web designer</span>
+          <span class="item">Frontend developer</span>
+        </div></h4>
+
+        <h1 id="my_name">Rahul Meena</h1>
+        <div class="my_info">
+          I am undergraduate student of Electronics and Communication
+          Engineering at Rajasthan Technical University.I am a Frontend
+          Developer and Web Designer  . I also know adobe Photoshop and
+          adobe illustrator. I belive in Self learing . I also fond of
+          Robotics and photo editing .
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-5 col-md-6 col-sm-12">
+         <img src="img/about_img.png" class="img-fluid about_img" alt="my_about_img">
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  
+  
+  
+  <!-- About Section End -->
+  
+  
+  
+  <!-- Skill Section Start -->
+  
+  <div class="container">
+    <h1 id="skill" class="heading text-center"  style="color: burlywood;">SK<Span class="" style="color: #ff7657;">I</Span>LLS</h1>
+    <br><br><br>
+
+
+
+    <div class="container">
+      <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
+    
+        <div class="col">
+          <div class="p-3"><img src="https://img.icons8.com/color/2x/html-5.png" class="img-fluid Skill_img" alt="html_skill_img">
+          </div>
+ 
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/css3.png" class="img-fluid Skill_img" alt="css_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/bootstrap.png" class="img-fluid Skill_img" alt="boot_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/javascript.png" class="img-fluid Skill_img" alt="js_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/ultraviolet/2x/react.png" class="img-fluid Skill_img" alt="react_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://cdn.worldvectorlogo.com/logos/nodejs.svg" class="img-fluid Skill_img" alt="node_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/c-programming.png" class="img-fluid Skill_img" alt="c_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/python.png" class="img-fluid Skill_img" alt="python_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/django.png" class="img-fluid Skill_img" alt="django_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/adobe-illustrator.png" class="img-fluid Skill_img" alt="adobe_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/fluent/2x/adobe-photoshop.png" class="img-fluid Skill_img" alt="photoshop_skill_img">
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 ">  
+            <img src="https://img.icons8.com/color/2x/linux.png" class="img-fluid Skill_img" alt="linux_skill_img">
+         </div>
+        </div>
+        
+       
+      </div>
+    </div>
+</div>
+<br><br><br>
+
+
+  <!-- Skill Section End -->
+
+
+  <!-- Projects Section Start -->
+
+<div class="container">
+  <h1 id="project" class="heading text-center"  style="color: burlywood;">PRO<Span class="" style="color: #ff7657;">J</Span>ECTS</h1>
+<br><br>
+
+
+<div class="container overflow-hidden">
+  <div class="row   gy-5">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+      <div class="p-3 projects_box box"> Projects Name   </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+      <div class="p-3 projects_box box"> Projects Name   </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+      <div class="p-3 projects_box box"> Projects Name   </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+      <div class="p-3 projects_box box"> Projects Name   </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+      <div class="p-3 projects_box box"> Projects Name   </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
+      <div class="p-3 projects_box box"> Projects Name   </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+  <!-- Projects Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact">
+    <div class="container">
+        <div class="row header-text text-center">
+            <div class="col-lg-12">
+              <h1 id="contact" class="heading text-center"  style="color: burlywood;">CON<Span class="" style="color: #ff7657;">T</Span>ACT</h1>           
+             </div>
+        </div><br><br>
+        <div class="row contact-pa">
+
+ 
+  <div class="row col-lg-6 ">
+ <h1 class="display-1">If Not <span> Now, </span>When? Let's <span>work</span> <span> Together!</span></h1>
+  </div>
+
+
+  <div class="row col-lg-6 ">
+
+    <div class="col-lg-12 mobile-space">
+      <div class="row">
+          <div class="col-lg-12">
+              <form>
+                  <div class="input-group contact-input mb-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text faq-icon">
+                            <i class="fa fa-user"></i> 
+ 
+                          </span>
+                      </div>
+                      <input type="text" class="form-control box-bg" placeholder="Username" aria-label="Username">
+                  </div>
+              </form>
+          </div>
+          <div class="col-lg-12">
+              <form>
+                  <div class="input-group contact-input mb-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text faq-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                          </span>
+                      </div>
+                      <input type="email" class="form-control box-bg" placeholder="Email Address" aria-label="Username">
+                  </div>
+              </form>
+          </div>
+          <div class="col-lg-12">
+              <form>
+                  <div class="form-group mb-4">
+                      <textarea class="form-control box-bg" placeholder="Ask a Question..." rows="3"></textarea>
+                  </div>
+                  <div class="con-btn-main wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1s">
+                      <input type="submit" value="Submit Now" class="con-btn">
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  </div>
+
+ 
+ 
+        </div>
+    </div>
+</section><br><br><br>
+
+    <!-- Contact Section End -->
+
+ 
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- <script src="portfolio.js"> -->
+  <script src="portfolio.js">  </script>
+  <script src="portfolio_1.js">  </script>
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
