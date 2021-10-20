@@ -348,47 +348,76 @@ html {
 
 /*  Project Section Start */
 #project_text {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .projects_box {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 25px;
-    border-radius: 10px;
-    /* margin: auto; */
-    /* width: 20px; */
-    /* height: 60px; */
-    /* padding: 53px; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  border-radius: 10px;
+  /* margin: auto; */
+  /* width: 20px; */
+  /* height: 60px; */
+  /* padding: 53px; */
 }
 
-.box{
-    color: rgb(80, 80, 80);
-    /* width: 150px; */
-    height: 200px;
-    background: rgb(24, 24,24);
-    font-size: 2rem;
-    font-family: cursive;
-    position: relative;
-
+.box {
+  color: rgb(80, 80, 80);
+  /* width: 150px; */
+  height: 200px;
+  background: rgb(24, 24, 24);
+  font-size: 2rem;
+  font-family: cursive;
+  position: relative;
 }
 
-.box::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    /* width: 300px; */
-    height: 208px;
-    background:linear-gradient(45deg , #3dec28 , #00000000 , #00000000 , #1c58c9);
-    z-index: -1;
-    transition: all 0.6s;
+.box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* width: 300px; */
+  height: 208px;
+  background: linear-gradient(45deg, #3dec28, #00000000, #00000000, #1c58c9);
+  z-index: -1;
+  transition: all 0.6s;
 }
 
-.box:hover::before{
-    transform: rotate(180deg);
+.box:hover::before {
+  transform: rotate(180deg);
+}
+
+.projects_box {
+  background-color: white;
+}
+
+.box1 {
+  border: 2px solid white;
+  border-radius: 10%;
+}
+
+.box1:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 1191px) {
+  .box1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 990px) {
+  .box1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .box1 {
+    width: 70%;
+  }
 }
 
 
@@ -660,24 +689,25 @@ element.style {
 
 <div class="container overflow-hidden">
   <div class="row   gy-5">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-      <div class="p-3 projects_box box"> Projects Name   </div>
+
+    <div data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook Clone UI using react.js " class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+      <div class="p-3 projects_box1 box1"> <a target="_blank" href="https://fbclone-809ab.web.app/">  <img class="img-fluid" src="img/facebook_img.jpg" alt="Facebook clone ">  </a>
+      </div>
+  </div>
+
+    <div  data-bs-toggle="tooltip" data-bs-placement="top" title="e_commerec_website using Django " class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+      <div class="p-3 projects_box1 box1"> <a target="_blank" href="">  <img class="img-fluid" src="img/ecommerce_img.png" alt="ecommerce_img"> </a>  </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-      <div class="p-3 projects_box box"> Projects Name   </div>
+    <div data-bs-toggle="tooltip" data-bs-placement="top" title="Blog_website using Django " class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+      <div class="p-3 projects_box1 box1"> <a target="_blank" href="https://blogweb01.herokuapp.com/">  <img class="img-fluid" src="img/blogging_img.png" alt="blogging_img"> </a>  </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-      <div class="p-3 projects_box box"> Projects Name   </div>
+
+    <div data-bs-toggle="tooltip" data-bs-placement="top" title="Bakery_and_restaurant_website UI using HTML5 & CSS3 " class="col-12 col-sm-6 col-md-6 col-lg-3 ">
+      <div class="p-3 projects_box1 box1"> <a target="_blank" href="https://developer-rahul07.github.io/bakery-and-restaurants_Website/">  <img class="img-fluid" src="img/bakery_restaurants_img1.png" alt="bakery img"> </a>  </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-      <div class="p-3 projects_box box"> Projects Name   </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-      <div class="p-3 projects_box box"> Projects Name   </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-      <div class="p-3 projects_box box"> Projects Name   </div>
-    </div>
+
+    
+
   </div>
 </div>
 
